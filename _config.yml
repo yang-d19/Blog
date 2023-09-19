@@ -104,14 +104,14 @@ theme: icarus
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-# deploy:
-#   type: sftp
-#   host: 184.72.45.46
-#   user: ubuntu
-#   remotePath: /var/www/html
-#   privateKey: C:/Users/yangd/.ssh/yangding1698.pem
-
 deploy:
-  type: git
-  repo: https://github.com/yang-d19/yang-d19.github.io
-  branch: main
+  type: sftp
+  host: 184.72.45.46
+  user: ubuntu
+  remotePath: /var/www/html
+  privateKey: C:/Users/yangd/.ssh/yangding1698.pem
+
+# deploy:
+#   type: git
+#   repo: https://github.com/yang-d19/yang-d19.github.io
+#   branch: main

@@ -24,10 +24,37 @@ V2Ray 客户端使用的是 [v2rayA/v2rayA: A web GUI client of Project V which 
 
 这一步直接参考 v2rayA 官方文档： [Debian / Ubuntu - v2rayA](https://v2raya.org/docs/prologue/installation/debian/)
 
-- “安装 V2Ray 内核 / Xray 内核” 一步，选择 “ v2rayA 提供的镜像脚本（推荐）”
-- “安装 v2rayA” 一步，选择 “方法一：通过软件源安装”
+“安装 V2Ray 内核 / Xray 内核” 一步，选择 “ v2rayA 提供的镜像脚本（推荐）”
 
-在 WSL2-Ubuntu 下，使用 `systemctl` 命令会遇到
+```bash
+# 下载并执行 v2raya 提供的脚本
+curl -Ls https://mirrors.v2raya.org/go.sh | sudo bash
+# 关闭 v2ray 自启动
+sudo systemctl disable v2ray --now
+```
+
+“安装 v2rayA” 一步，选择 “方法一：通过软件源安装”
+
+```bash
+# 添加公钥
+wget -qO - https://apt.v2raya.org/key/public-key.asc | sudo tee /etc/apt/trusted.gpg.d/v2raya.asc
+# 添加 V2RayA 软件源
+echo "deb https://apt.v2raya.org/ v2raya main" | sudo tee /etc/apt/sources.list.d/v2raya.list
+sudo apt update
+# 安装 V2RayA
+sudo apt install v2raya
+```
+
+“启动 v2rayA / 设置 v2rayA 自动启动”
+
+```bash
+# 启动 v2rayA
+sudo systemctl start v2raya.service
+# 设置开机自动启动
+sudo systemctl enable v2raya.service
+```
+
+在普通的 Ubuntu 系统下，这一步到这里就完成了。但在 WSL2-Ubuntu 下，使用 `systemctl` 命令会遇到
 
 ```
 System has not been booted with systemd as init system (PID 1). Can't operate
@@ -83,15 +110,17 @@ sudo chmod +x /usr/bin/systemctl
 
 点击右上角的 `setting`，打开弹窗里左下角的 `address and ports`，即可查看不同协议对应的端口号，如 `socks5 `协议的代理端口是 20170，`http` 协议的代理端口是 20171。
 
-## 4. 配置 Git 代理
+## 4. 配置代理
 
-现在代理已经设置好，但是不同的服务仍需不同的配置。
+### (1) 若不开启透明代理
 
-### (1) 浏览器
+如果保持 v2rayA 的默认配置，不开启透明代理，则需要针对不同的服务分别配置。
+
+#### 浏览器
 
 使用 SwitchyOmega 浏览器插件，支持 Chrome 和 Firefox: [Releases · FelisCatus/SwitchyOmega (github.com)](https://github.com/FelisCatus/SwitchyOmega/releases)
 
-### (2) Git
+#### Git
 
 使用下面的语句配置 git 的 http 代理：
 
@@ -107,3 +136,9 @@ git config --global https.proxy 'http://127.0.0.1:20171'
 git config --global --unset http.proxy
 git config --global --unset https.proxy
 ```
+
+### (2) 开启透明代理
+
+点击右上角 `设置` ，第一栏 `透明代理 / 系统代理` 中选择 `启用：大陆白名单模式`。
+
+此时系统所有流量将自动经过代理，不需要手动配置，非常方便。
