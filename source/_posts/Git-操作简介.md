@@ -1,7 +1,7 @@
 ---
 title: Git 操作简介
 typora-root-url: ./
-categories: [技术]
+categories: [Technology]
 tags: [Git, 留档备查]
 date: 2021-06-29
 ---

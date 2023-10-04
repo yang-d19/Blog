@@ -1,8 +1,20 @@
+---
+title: v2rayA教程
+date: 2023-09-19
+typora-root-url: ./
+categories: [Technology]
+tags: [留档备查]
+---
+
 V2Ray 核心使用的是 [v2fly/v2ray-core: A platform for building proxies to bypass network restrictions. (github.com)](https://github.com/v2fly/v2ray-core)；
 
 V2Ray 客户端使用的是 [v2rayA/v2rayA: A web GUI client of Project V which supports V2Ray, Xray, SS, SSR, Trojan and Pingtunnel 🚀 (github.com)](https://github.com/v2rayA/v2rayA/)；
 
 购买境外节点使用的是 [Portal Home - V2NET (v2ray.cx)](https://main.v2ray.cx/index.php)
+
+> 这篇文档和另一篇 `WSL2搭建v2ray代理有重复`，后续会合并
+
+<!-- more -->
 
 ## 1. 安装 v2ray 支持的客户端
 

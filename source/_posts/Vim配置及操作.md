@@ -1,7 +1,7 @@
 ---
 title: Vim配置及操作
 typora-root-url: ./
-categories: [技术]
+categories: [Technology]
 tags: [留档备查, Vim, 安装教程]
 date: 2021-10-22
 ---

@@ -105,11 +105,15 @@ theme: icarus
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: sftp
-  host: 184.72.45.46
-  user: ubuntu
-  remotePath: /var/www/html
-  privateKey: C:/Users/yangd/.ssh/yangding1698.pem
+  # type: sftp
+  # host: 184.72.45.46
+  # user: ubuntu
+  # remotePath: /var/www/html
+  # privateKey: C:/Users/yangd/.ssh/yangding1698.pem
+  type: git
+  repo: https://github.com/yang-d19/yang-d19.github.io # https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
+  branch: main
+  message:
 
 # deploy:
 #   type: git

@@ -1,7 +1,7 @@
 ---
 title: 使用 Anaconda 配置《机器学习实战》中的 Tensorflow 环境
 typora-root-url: ./
-categories: [技术]
+categories: [Technology]
 tags: [安装教程, Tensorflow]
 date: 2021-02-07
 ---

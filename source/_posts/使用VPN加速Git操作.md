@@ -1,7 +1,7 @@
 ---
 title: 使用VPN加速Git操作
 typora-root-url: ./
-categories: [技术]
+categories: [Technology]
 tags: [Git, 留档备查]
 date: 2022-01-28
 ---

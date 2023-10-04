@@ -1,7 +1,7 @@
 ---
 title: Jetson Nano 安装 Tensorflow2
 typora-root-url: ./
-categories: [技术]
+categories: [Technology]
 tags: [安装教程, Tensorflow, Jetson Nano]
 date: 2021-07-03
 ---

@@ -1,7 +1,7 @@
 ---
 title: Codeforces 题解 1557B [Moamen and k-subarrays]
 typora-root-url: ./
-categories: [技术]
+categories: [Technology]
 tags: [算法, Codeforces]
 date: 2021-08-18
 ---

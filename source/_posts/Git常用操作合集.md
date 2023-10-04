@@ -1,7 +1,7 @@
 ---
 title: Git常用操作合集
 typora-root-url: ./
-categories: [技术]
+categories: [Technology]
 tags: [Git, 留档备查]
 date: 2022-05-09
 ---

@@ -82,12 +82,12 @@ article:
 search:
     type: insight
     index_pages: true
-comment:
-    type: valine
-    app_id: QXwawUww9c3XHMoxVv0NnHOJ-gzGzoHsz
-    app_key: eg0YLmoskERPidtE7sdkzKH6
-    placeholder: "Hello World!"
-    meta: ["nick", "mail"]
+# comment:
+#     type: #valine
+#     app_id: #QXwawUww9c3XHMoxVv0NnHOJ-gzGzoHsz
+#     app_key: #eg0YLmoskERPidtE7sdkzKH6
+#     placeholder: #"Hello World!"
+#     meta: #["nick", "mail"]
 sidebar:
     left:
         sticky: false
@@ -98,8 +98,8 @@ widgets:
         position: left
         type: profile
         author: Ding Yang
-        author_title: College Student
-        location: Beijing, China
+        author_title: Graduate Student
+        location: Ithaca, NY, United States
         avatar: /img/yahaha.jpg
         avatar_rounded: false
         gravatar: 

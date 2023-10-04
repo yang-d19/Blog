@@ -2,7 +2,7 @@
 title: WSL2 Ubuntu GUI
 date: 2022-09-26
 typora-root-url: ./
-categories: [技术]
+categories: [Technology]
 tags: [留档备查, WSL2]
 ---
 

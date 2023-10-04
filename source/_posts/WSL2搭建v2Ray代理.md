@@ -2,7 +2,7 @@
 title: WSL2搭建v2Ray代理
 date: 2022-09-28
 typora-root-url: ./
-categories: [技术]
+categories: [Technology]
 tags: [留档备查, WSL]
 ---
 

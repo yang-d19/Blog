@@ -1,7 +1,7 @@
 ---
 title: VSCode 使用 PlatformIO 插件开发基于 HAL 库的 STM32项目
 typora-root-url: ./
-categories: [技术]
+categories: [Technology]
 tags: [STM32, PlatformIO, STM32CubeMX, VSCode]
 date: 2021-01-14
 ---

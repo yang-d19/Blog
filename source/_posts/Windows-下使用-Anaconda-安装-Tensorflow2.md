@@ -1,7 +1,7 @@
 ---
 title: Windows 下使用 Anaconda 安装 Tensorflow2
 typora-root-url: ./
-categories: [技术]
+categories: [Technology]
 tags: [安装教程, Tensorflow]
 date: 2021-06-25
 ---
