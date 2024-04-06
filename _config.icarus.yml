@@ -117,6 +117,12 @@ widgets:
             Twitter:
                 icon: fab fa-twitter
                 url: https://twitter.com/yangdin13606764
+            Linkedin:
+                icon: fab fa-linkedin
+                url: https://www.linkedin.com/in/ding-yang-829248219/
+            Instagram:
+                icon: fab fa-instagram
+                url: https://www.instagram.com/dingyang1698/
     -
         position: left
         type: toc

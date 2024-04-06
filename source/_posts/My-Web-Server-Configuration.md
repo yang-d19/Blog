@@ -1,5 +1,5 @@
 ---
-title: 我的云服务器配置
+title: My Web Server Configuration
 typora-root-url: ./
 categories: [Technology]
 tags: [留档备查]
