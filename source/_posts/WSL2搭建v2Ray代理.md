@@ -4,6 +4,7 @@ date: 2022-09-28
 typora-root-url: ./
 categories: [Technology]
 tags: [留档备查, WSL]
+cover: /img/wls2-v2ray.png
 ---
 
 WSL2 下没法直接使用 Windows 中的 VPN，导致涉及到 GitHub 的操作经常失败，因此尝试在 WSL2 中搭建 v2Ray 代理。

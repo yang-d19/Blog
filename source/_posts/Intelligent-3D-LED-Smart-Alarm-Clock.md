@@ -4,6 +4,7 @@ typora-root-url: ./
 categories: [Technology]
 tags: [Course Project]
 date: 2024-01-30 05:20:53
+cover: /Intelligent-3D-LED-Smart-Alarm-Clock/horizon.jpg
 ---
 
 This the final project for course ECE 5725 Embedded Operating System at Cornell University (2023 Fall). Me and my team members build an intelligent 3D LED smart alarm clock with LED panels bought from Adafruit, 3D printed frameworks and specially designed software based on open source libraries.
@@ -12,9 +13,7 @@ This the final project for course ECE 5725 Embedded Operating System at Cornell 
 
 ## Introduction
 
-<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/look.jpg" alt="look" style="zoom:33%;" />
-
-
+<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/look.jpg" class="box px-0 py-0 my-3 ml-auto mr-auto" width="520" alt="look"/>
 
 Intelligent 3D LED Smart Alarm Clock is an compact designed electronic object that integrates functions like displaying current time, set alarm and make an alarm sound when the set time is reached, switch to different special displaying effects when accelerometer detects pose change, etc.
 
@@ -55,7 +54,7 @@ The 3D printed case for our project is composed of 2 bases and 3 side bars.
 
 ### Base
 
-<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/base.png" alt="base" style="zoom: 33%;" />
+<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/base.png" class="box px-0 py-0 my-3 ml-auto mr-auto" width="520" alt="base"/>
 
 ### Side Bars
 
@@ -65,7 +64,7 @@ The overall structure of three side panels are the same, but they differ in a fe
 + One has a long notch on one side to let power cable and speaker cable go through.
 + The shape of them is designed to better fit between the bases and the panels without the help of screws or glue.
 
-<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/3 side bars .png" alt="3 side bars " style="zoom: 33%;" />
+<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/3 side bars .png" class="box px-0 py-0 my-3 ml-auto mr-auto" width="520" alt="3 side bars "/>
 
 ### Assembly
 
@@ -73,11 +72,11 @@ Two bases and three side bars are put together with the help of magnets.
 
 We avoid using glues, so that each part can be easily disassembled and replaced.
 
-<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/assembly.png" alt="assembly" style="zoom:40%;" />
+<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/assembly.png" class="box px-0 py-0 my-3 ml-auto mr-auto" width="520" alt="assembly"/>
 
 ### Magnets and Screws
 
-<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/mags.png" alt="mags" style="zoom: 33%;" />
+<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/mags.png" class="box px-0 py-0 my-3 ml-auto mr-auto" width="520"/>
 
 ## Hardware Design
 
@@ -86,7 +85,7 @@ They need seven GPIO pins to connect to the RPi.
 
 The buttons are pulled down in our code, so no pull down circuit in our circuit.
 
-<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/polished circuit graph.png" alt="polished circuit graph" style="zoom: 33%;" />
+<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/polished circuit graph.png" class="box px-0 py-0 my-3 ml-auto mr-auto" width="520" alt="polished circuit graph"/>
 
 ## Software Design
 
@@ -96,33 +95,38 @@ It contains cpp programs, python programs and shell scripts.
 
 It also utilized FIFO to communicate between different processes.
 
-![software graph](/Intelligent-3D-LED-Smart-Alarm-Clock/software graph.png)
+<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/software graph.png" class="box px-0 py-0 my-3 ml-auto mr-auto">   
 
 ## Demonstration
 
 ### Default Mode
 
-<center>
-  	<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/horizon.jpg" alt="image1" height="200">   
-  	<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/horizontal scroll.gif" alt="image2" height="200"> 
-    <img src="/Intelligent-3D-LED-Smart-Alarm-Clock/horizon to vertical.gif" alt="image3" height="200">
-    <img src="/Intelligent-3D-LED-Smart-Alarm-Clock/vertical to horizon.gif" alt="image4" height="200">
-</center>
+<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/horizon.jpg" class="box px-0 py-0 my-3 ml-auto mr-auto" width="520">   
+
+- Horizontal Scroll
+<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/horizontal scroll.gif" class="box px-0 py-0 my-3 ml-auto mr-auto" width="520"> 
+
+- Vertical Falling
+<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/horizon to vertical.gif" class="box px-0 py-0 my-3 ml-auto mr-auto" width="520">
+
+- Horizontal Recovering
+<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/vertical to horizon.gif" class="box px-0 py-0 my-3 ml-auto mr-auto" width="520">
 
 ### Alarm Setting Mode
 
-<center>
-  	<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/set hour.gif" alt="image2" height="200"> 
-    <img src="/Intelligent-3D-LED-Smart-Alarm-Clock/set minute.gif" alt="image3" height="200">
-</center>
+- Set Hours
+<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/set hour.gif" class="box px-0 py-0 my-3 ml-auto mr-auto" width="520">
+
+- Set Minutes
+<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/set minute.gif" class="box px-0 py-0 my-3 ml-auto mr-auto" width="520">
 
 ### Zen Mode
 
-<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/zen.gif" alt="zen" style="zoom:80%;" />
+<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/zen.gif" class="box px-0 py-0 my-3 ml-auto mr-auto" width="520"/>
 
 ### Snowflake Mode
 
-<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/snowflake.gif" alt="snowflake" style="zoom:80%;" />
+<img src="/Intelligent-3D-LED-Smart-Alarm-Clock/snowflake.gif" class="box px-0 py-0 my-3 ml-auto mr-auto" width="520" />
 
 ## References
 

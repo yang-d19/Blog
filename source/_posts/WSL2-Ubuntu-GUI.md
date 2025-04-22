@@ -4,11 +4,19 @@ date: 2022-09-26
 typora-root-url: ./
 categories: [Technology]
 tags: [留档备查, WSL2]
+cover: /WSL2-Ubuntu-GUI/desktop.png
 ---
 
 本文讲解关于配置基于 WSL2 的 Ubuntu 系统的图形界面。
 
 使用 xrdp 作为守护程序，它支持 Microsoft 的 [Remote Desktop Protocol](https://en.wikipedia.org/wiki/Remote_Desktop_Protocol) (RDP) 且使用 Xvnc 或 xorgxrdp 作为其后端。使用 xfce4 作为桌面环境，xfce 是一个轻量级的桌面环境，专为 Unix-like 的操作系统设计，能在有限的系统资源下运行。
+
+<article class="message message-immersive is-primary">
+    <div class="message-body">
+        <i class="fas fa-globe-americas mr-2"></i>本文同时提供以下语言的翻译：
+        <a href="/v2rayA教程/">English</a>.
+    </div>
+</article>
 
 <!--more-->
 

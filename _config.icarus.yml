@@ -98,8 +98,8 @@ widgets:
         position: left
         type: profile
         author: Ding Yang
-        author_title: Graduate Student
-        location: Ithaca, NY, United States
+        author_title: Software Engineer
+        location: San Jose, CA, United States
         avatar: /img/yahaha.jpg
         avatar_rounded: false
         gravatar: 
@@ -110,13 +110,10 @@ widgets:
                 url: https://github.com/yang-d19
             Email:
                 icon: fa fa-envelope
-                url: mailto:yangding19thu@outlook.com
+                url: mailto:dingtc01@gmail.com
             Wechat:
                 icon: fab fa-weixin
                 url: /img/wechat.jpg
-            Twitter:
-                icon: fab fa-twitter
-                url: https://twitter.com/yangdin13606764
             Linkedin:
                 icon: fab fa-linkedin
                 url: https://www.linkedin.com/in/ding-yang-829248219/

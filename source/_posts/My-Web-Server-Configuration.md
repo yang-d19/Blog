@@ -4,6 +4,7 @@ typora-root-url: ./
 categories: [Technology]
 tags: [留档备查]
 date: 2022-08-14
+cover: /img/web-server-config.png
 ---
 
 This blog introduce the detailed configuration of my cloud server, including customizing shell theme and vim theme. It also tell you how to run a apache http server and deploy your blog resource to the server.
@@ -147,7 +148,7 @@ You can select various color themes, my favorite is `agnoster`.
 
 It looks like that:
 
-<img src="/我的云服务器配置/agnoster.png" alt="agnoster" style="zoom:30%;" />
+<img src="/My-Web-Server-Configuration/agnoster.png" class="box px-0 py-0 my-3 ml-auto mr-auto" width="520" />
 
 Change it by modifying `ZSH_THEME="agnoster"` or something else in `~/.zshrc`.
 
@@ -223,7 +224,7 @@ You can choose awesome vim plugins from [Vim Awesome](https://vimawesome.com/), 
 
 This is how it looks like.
 
-<img src="/我的云服务器配置/vim.png" alt="vim" style="zoom:30%;" />
+<img src="/My-Web-Server-Configuration/vim.png" class="box px-0 py-0 my-3 ml-auto mr-auto" width="520" />
 
 `tomasr/molokai`, `vim-airline/vim-airline` and so on are all plugins that I added, but keep in mind that too many plugins may slow down your editor, so I prefer to install most necessary vim plugins only.
 
@@ -242,11 +243,11 @@ See if apache service is running in your server.
 sudo systemctl status apache2
 ```
 
-<img src="/我的云服务器配置/system-ctrl.png" alt="system-ctrl" style="zoom:30%;" />
+<img src="/My-Web-Server-Configuration/system-ctrl.png" class="box px-0 py-0 my-3 ml-auto mr-auto" width="520" />
 
 Then type my server’s IP address in browser
 
-<img src="/我的云服务器配置/apache.png" alt="apache" style="zoom: 30%;" />
+<img src="/My-Web-Server-Configuration/apache.png" class="box px-0 py-0 my-3 ml-auto mr-auto" width="520" />
 
 Done!
 
