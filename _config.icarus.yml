@@ -67,8 +67,8 @@ article:
         theme: atom-one-light
         clipboard: true
         fold: unfolded
-    readtime: true
-    update_time: true
+    readtime: false
+    update_time: false
     licenses:
         Creative Commons:
             icon: fab fa-creative-commons
@@ -100,8 +100,8 @@ widgets:
         author: Ding Yang
         author_title: Software Engineer
         location: San Jose, CA, United States
-        avatar: /img/yahaha.jpg
-        avatar_rounded: false
+        avatar: /img/self2.jpg
+        avatar_rounded: true
         gravatar: 
         follow_link: https://github.com/yang-d19
         social_links:

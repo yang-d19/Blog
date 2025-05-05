@@ -26,7 +26,7 @@ date: 2021-01-14
 
 ### 1、点击 ACCESS TO MCU SELECTOR
 
-![access to mcu](/VSCode-PlatformIO开发基于HAL库的STM32/access to mcu.png)
+![access to mcu](/VSCode-PlatformIO开发基于HAL库的STM32/access-to-mcu.png)
 
 ### 2、选择自己用的板子型号，可直接搜索
 
@@ -58,7 +58,7 @@ date: 2021-01-14
 
 打开生成的代码所在的文件夹，此时文件结构应该如下图所示
 
-<img src="/VSCode-PlatformIO开发基于HAL库的STM32/cumemx生成后的文件夹.png" alt="cumemx生成后的文件夹" style="zoom:30%;" />
+<img src="/VSCode-PlatformIO开发基于HAL库的STM32/cumemx生成后的文件夹.png" class="box px-0 py-0 my-3 ml-auto mr-auto" width="520" />
 
 在项目所在文件夹中新建一个空白文件，重命名为 platformio.ini，将如下代码拷贝到文件中
 
@@ -102,7 +102,7 @@ debug_tool = stlink
 
 #### （2）可以看到文件夹中多出了自动生成的一些内容
 
-<img src="/VSCode-PlatformIO开发基于HAL库的STM32/用vscode打开后的文件夹.png" alt="用vscode打开后的文件夹" style="zoom:30%;" />
+<img src="/VSCode-PlatformIO开发基于HAL库的STM32/用vscode打开后的文件夹.png" class="box px-0 py-0 my-3 ml-auto mr-auto" width="520" />
 
 #### （3）成功打开项目后的 VSCode 界面
 

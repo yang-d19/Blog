@@ -1,10 +1,10 @@
 ---
-title: WSL2 Ubuntu GUI
+title: WSL2 Ubuntu GUI 配置
 date: 2022-09-26
 typora-root-url: ./
 categories: [Technology]
 tags: [留档备查, WSL2]
-cover: /WSL2-Ubuntu-GUI/desktop.png
+cover: /WSL2-Ubuntu-GUI-配置/desktop.png
 ---
 
 本文讲解关于配置基于 WSL2 的 Ubuntu 系统的图形界面。
@@ -13,8 +13,8 @@ cover: /WSL2-Ubuntu-GUI/desktop.png
 
 <article class="message message-immersive is-primary">
     <div class="message-body">
-        <i class="fas fa-globe-americas mr-2"></i>本文同时提供以下语言的翻译：
-        <a href="/v2rayA教程/">English</a>.
+        <i class="fas fa-globe-americas mr-2"></i>The article is also available in language:
+        <a href="/WSL2-Ubuntu-GUI-Configuration/">English</a>.
     </div>
 </article>
 
@@ -46,7 +46,7 @@ sudo apt install xfce4 xfce4-goodies
 
 再次执行命令，跳出如下界面即为成功安装：
 
-<img src="/WSL2-Ubuntu-GUI/config-lightdm.png" alt="config-lightdm" style="zoom:30%;" />
+<img src="/WSL2-Ubuntu-GUI-配置/config-lightdm.png" alt="config-lightdm" style="zoom:30%;" />
 
 任选一个，点击 OK。
 
@@ -69,7 +69,7 @@ echo xfce4-session > ~/.xsession
 
 然后编辑 `/etc/xrdp/startwm.sh`，将最后两行注释起来，再添加一行 `startxfce4` 即可，如下图：
 
-<img src="/WSL2-Ubuntu-GUI/startwm.png" alt="startwm" style="zoom:30%;" />
+<img src="/WSL2-Ubuntu-GUI-配置/startwm.png" alt="startwm" style="zoom:30%;" />
 
 最后 `sudo /etc/init.d/xrdp start` 启动远程桌面协议服务，出现如下提示即启动成功：
 
@@ -98,11 +98,11 @@ echo xfce4-session > ~/.xsession
 
 接着在如下界面输入用户名和密码：
 
-<img src="/WSL2-Ubuntu-GUI/xrdp.png" alt="xrdp" style="zoom: 50%;" />
+<img src="/WSL2-Ubuntu-GUI-配置/xrdp.png" alt="xrdp" style="zoom: 50%;" />
 
 点击连接，大功告成！
 
-<img src="/WSL2-Ubuntu-GUI/desktop.png" alt="desktop" style="zoom:33%;" />
+<img src="/WSL2-Ubuntu-GUI-配置/desktop.png" alt="desktop" style="zoom:33%;" />
 
 如果需要使用浏览器，打开 `Terminal`，输入 `sudo apt install firefox` 即可。
 
@@ -112,11 +112,11 @@ echo xfce4-session > ~/.xsession
 
 如果你使用的是 4K 高分屏，那么远程桌面的字体会非常非常小，需要进入 `Appearance` 修改配置：
 
-<img src="/WSL2-Ubuntu-GUI/apperance.png" alt="apperance" style="zoom:30%;" />
+<img src="/WSL2-Ubuntu-GUI-配置/apperance.png" alt="apperance" style="zoom:30%;" />
 
 将 `Windows Scaling` 选项调整为 `2x`：
 
-<img src="/WSL2-Ubuntu-GUI/appearance-scale-2x.png" alt="appearance-scale-2x" style="zoom:30%;" />
+<img src="/WSL2-Ubuntu-GUI-配置/appearance-scale-2x.png" alt="appearance-scale-2x" style="zoom:30%;" />
 
 也可以在 `Fonts` 菜单项中修改 DPI，DPI 越大，显示字体越大。
 
@@ -126,7 +126,7 @@ echo xfce4-session > ~/.xsession
 
 在 `Setting -> Light Locker Settings` 中将 `Automatically lock the session` 设置为 `Never` 即可。
 
-<img src="/WSL2-Ubuntu-GUI/light-locker.png" alt="light-locker" style="zoom:30%;" />
+<img src="/WSL2-Ubuntu-GUI-配置/light-locker.png" alt="light-locker" style="zoom:30%;" />
 
 ## 4. 简单脚本实现一键启动
 
@@ -155,4 +155,4 @@ sudo chmod +x ~/Documents/set-rdp.sh
 
 即可在终端输入 `rdp` 以启动 xrdp 服务，并显示 WSL2 的 IP 地址，如下：
 
-<img src="/WSL2-Ubuntu-GUI/rdp.png" alt="rdp" style="zoom:30%;" />
+<img src="/WSL2-Ubuntu-GUI-配置/rdp.png" alt="rdp" style="zoom:30%;" />
