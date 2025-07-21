@@ -4,7 +4,6 @@ typora-root-url: ./
 categories: [Technology]
 tags: [留档备查]
 date: 2022-08-14
-cover: /img/web-server-config.png
 ---
 
 This blog introduce the detailed configuration of my cloud server, including customizing shell theme and vim theme. It also tell you how to run a apache http server and deploy your blog resource to the server.
